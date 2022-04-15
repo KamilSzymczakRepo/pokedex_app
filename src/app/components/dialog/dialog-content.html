@@ -1,0 +1,32 @@
+<!-- <h1 mat-dialog-title>{{data.name}} #{{data.nationalPokedexNumbers}}</h1>
+<div mat-dialog-content>
+    <h4>Type</h4>
+    <ul class="noDot" *ngFor="let type of data.types; index as i;">
+        <li>
+            <button mat-button [class]="type">{{type}}</button>
+        </li>
+    </ul>
+    <h4>Weaknesses</h4>
+    <ul class="noDot" *ngFor="let item of data.weaknesses; index as i;">
+        <li>
+            <button mat-button [class]="item.type">{{item.type}}</button>
+        </li>
+    </ul>
+    <h4>Subtypes</h4>
+    <ul class="noDot" *ngFor="let subtype of data.subtypes; index as i;">
+        <li>
+            <button mat-stroked-button color="primary">{{subtype}}</button>
+        </li>
+    </ul>
+    <h4>HP</h4>
+    <span class=" hpClass">{{data.hp}} / 100</span>
+    <mat-progress-bar mode="determinate" [value]="data.hp"></mat-progress-bar>
+
+</div> -->
+<div class="centerComponent">
+    <img [src]="data.images.large" style="width: 70%;">
+</div>
+
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions>

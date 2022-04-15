@@ -1,0 +1,14 @@
+<mat-card class="mainCardView" style="margin: 20px;" *ngFor="let card of pokemon">
+    <mat-card-header>
+        <div mat-card-avatar class="header-image" style="background-image: url({{card.set.images.symbol}});">
+        </div>
+    </mat-card-header>
+    <div class="imageWrapper">
+        <img mat-card-image class="pokemonCardList" [src]="card.images.large" alt="card.name">
+    </div>
+    
+    <mat-card-actions>
+        <app-dialog [selectedCardData]="card"></app-dialog>
+        <button mat-button color="primary">Edit</button>
+    </mat-card-actions>
+</mat-card>

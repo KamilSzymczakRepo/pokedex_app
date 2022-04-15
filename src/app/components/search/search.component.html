@@ -1,0 +1,6 @@
+<form class="main-search-form">
+    <mat-form-field style="width: 20%;" appearance="legacy">
+        <mat-label>Search</mat-label>
+        <input (input)="changeInput($event.target)" [value]="value" matInput #message maxlength="256" placeholder="Type pokemon name">
+    </mat-form-field>
+</form>

@@ -1,0 +1,21 @@
+.mainCardView {
+    max-width: 300px;
+}
+  
+.header-image {
+    background-size: cover;
+}
+
+.proggress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.progressTitle{
+    margin-top: 60px;
+}

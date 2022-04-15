@@ -1,0 +1,12 @@
+<div mat-dialog-content>
+    <form>
+        <mat-form-field style="width: 350px;" appearance="legacy">
+            <mat-label>Api Key</mat-label>
+            <input (input)="onInputChange($event.target)" matInput #message maxlength="256"
+                placeholder="Type your api key">
+        </mat-form-field>
+    </form>
+</div>
+<mat-dialog-actions align="end">
+    <button mat-raised-button color="primary" (click)="onClickLogin()">Login</button>
+</mat-dialog-actions>

@@ -1,0 +1,41 @@
+import { IAbility } from "../models/ability";
+import { IAncientTrait } from "./ancientTrait";
+import { IAttack } from "../models/attack";
+import { IResistance } from "../models/resistance";
+import { IWeakness } from "../models/weakness";
+import { ICardImage } from "./image";
+import { ICardmarket } from "./cardmarket";
+import { ILegality } from "./legality";
+import { ISet } from "./set";
+import { ITCGPlayer } from "./tcgplayer";
+
+export interface ICard {
+  data: ICard;
+  id: string;
+  name: string;
+  supertype: string;
+  subtypes: string[];
+  hp?: string;
+  types?: string[];
+  evolvesFrom?: string;
+  evolvesTo?: string[];
+  rules?: string[];
+  ancientTrait?: IAncientTrait;
+  abilities?: IAbility[];
+  attacks?: IAttack[];
+  weaknesses?: IWeakness[];
+  resistances?: IResistance[];
+  retreatCost?: string[];
+  convertedRetreatCost?: number;
+  set: ISet;
+  number: string;
+  artist?: string;
+  rarity: string;
+  flavorText?: string;
+  nationalPokedexNumbers?: number[];
+  legalities: ILegality;
+  regulationMark?: string;
+  images: ICardImage;
+  tcgplayer?: ITCGPlayer;
+  cardmarket?: ICardmarket;
+}

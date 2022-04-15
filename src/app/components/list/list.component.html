@@ -1,0 +1,11 @@
+<mat-action-list>
+    <button mat-list-item *ngFor="let card of cards" (click)="selectCard(card)">
+        <img mat-list-avatar [src]="card.set.images.symbol" alt="card.name">
+        <div mat-line>{{card.name}}</div>
+        <div mat-line>#{{card.nationalPokedexNumbers}}</div>
+        <button mat-icon-button>
+            <mat-icon>chevron_right</mat-icon>
+        </button>
+
+    </button>
+</mat-action-list>

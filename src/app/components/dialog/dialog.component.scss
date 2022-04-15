@@ -1,0 +1,52 @@
+.noDot{
+    list-style-type: none;
+  }
+
+.Fire{
+    background-color: #ff867c
+}
+
+.Fighting{
+    background-color: #ef5350
+}
+
+.Grass {
+    background-color: #98ee99;
+}
+
+.Poision {
+    background-color: #ee98fb;
+}
+
+.Flying{
+    background-color: #88ffff;
+}
+
+.Water{
+    background-color: #9be7ff;
+}
+.Bug{
+    background-color: #b2fab4;
+}
+
+.Darkness{
+    background-color: #c1d5e0;
+}
+
+.Lightning{
+    background-color: #ffffa8
+}
+.Psychic{
+    background-color: #ffbb93;
+}
+.Metal{
+    background-color: #eeeeee;
+}
+.Dragon{
+    background-color: #ffa040;
+}
+.hpClass{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}

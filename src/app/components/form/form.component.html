@@ -1,0 +1,9 @@
+<span *ngFor="let card of pokemon | keyvalue">
+    <p class="form-row" *ngIf="isString(card.value)">
+        <mat-form-field appearance="legacy">
+            <mat-label>{{card.key}}</mat-label>
+            <input matInput [value]="card.value">
+        </mat-form-field>
+    </p>
+</span>
+<button mat-raised-button color="primary">Save</button>

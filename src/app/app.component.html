@@ -1,0 +1,19 @@
+<app-modal class="centerComponent" *ngIf="!isLoggin" (login)="loginApi($event)"></app-modal>
+<app-toolbar *ngIf="isLoggin"></app-toolbar>
+<app-spinner *ngIf="showSpinner"></app-spinner>
+<div *ngIf="!showSpinner && isLoggin" class="searchAndToggleButton">
+    <app-button *ngIf="!showSpinner && isLoggin" (selectGroupButton)="changeSelectionGroup($event)"></app-button>
+    <app-search *ngIf="!showSpinner && isLoggin" class="mainSearchStyle"></app-search>
+</div>
+<div class="containerList" *ngIf="buttonSelectType === 'list'">
+    <h3 class="mat-display-1">Pokemons</h3>
+    <div class="row">
+        <app-list class="col" *ngIf="isLoggin" [key]="key" (selectionChange)="selected = $event"></app-list>
+        <mat-divider vertical="true"></mat-divider>
+        <app-form class="col" style="margin-left:16px" *ngIf="selected" [pokemon]="selected"> </app-form>
+    </div>
+
+</div>
+<app-card class="cardContainer" *ngIf="isLoggin && buttonSelectType === 'card'" [key]="key"></app-card>
+
+<router-outlet></router-outlet>

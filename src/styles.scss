@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@mixin center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.centerComponent {
+    @include center()
+}
+
+.full-width {
+    width: 100%;
+  }
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.containerList {
+    max-width: 80%;
+    margin: 40px auto
+}
+.row {
+    display: flex;
+}
+.col{
+    flex: 1
+}
+
+.searchAndToggleButton{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 16px
+}
+
+.mainSearchStyle{
+    width: 100%; 
+    
+}
